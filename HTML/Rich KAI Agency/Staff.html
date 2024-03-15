@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RKA職員介紹</title>
+		<link rel="icon" href="lo.png" type="lo.png" / >
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+    :root {
+    --background-color: #FFFFFF;
+    --border-color: #E0E0E0;
+    --text-color: #34495e;
+    --color1: #EC3E27;
+    --color2: #fd79a8;
+    --color3: #0984e3;
+    --color4: #00b894;
+    --color5: #fdcb6e;
+    --color6: #e056fd;
+    --color7: #F97F51;
+    --color8: #BDC581;
+    --a_border_color: #86a3b3;
+    --h2_border_color: #8ea2b8;
+    --a_hover_background_color: #86a3b3;
+    --font_color: #3C3C3C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color);
+    display: flex;
+	flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+	text-decoration: none;
+}
+
+.card {
+    /* flex布局下元素不按比例缩放 */
+    flex-shrink: 0;
+    flex-grow: 0;
+    position: relative;
+    width: 200px;
+    height: 350px;
+    overflow: hidden;
+    margin: 100px;
+    background-color: var(--border-color);
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* flex 子元素 縱向排列 */
+    flex-direction: column;
+    /* 增加陰影 */
+    box-shadow: 0 0 30px #2c2c2c;
+    /* 給字體顏色 */
+    color: var(--font_color);
+}
+
+.photo {
+    position: absolute;
+    /* 放大 */
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    border-radius: 0%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.photo::before {
+    /* 透過before讓文字看起来清晰一些 */
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #333, transparent);
+}
+.card:hover .photo::before{
+    /* 缩小時隱藏 */
+    display: none;
+}
+
+.photo img {
+    /* 圖片高寬均為100% */
+    /* 按照cover縮放，裁切長邊 */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card:hover .photo {
+    /* 滑鼠往上移時變小 */
+    width: 120px;
+    height: 120px;
+    top: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #111;
+}
+
+h1 {
+    position: absolute;
+    top: 380px;
+    transition: 0.5s;
+}
+
+.card:hover h1 {
+    position: absolute;
+    top: 170px;
+}
+
+h2 {
+    margin-top: 220px;
+    width: 80%;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--h2_border_color);
+}
+
+.card a {
+    color: var(--font_color);
+    text-decoration: none;
+    padding: 12px 36px;
+    border: 1px solid var(--a_border_color);
+    border-radius: 8px;
+}
+
+.card a:hover {
+    color: #Fff;
+    background-color: var(--a_hover_background_color);
+}
+header {
+			width:100%;
+			background-image:("basketball.jpeg");
+			background-position: center;
+			text-align: center;
+			font-family: serif;
+			font-size: xx-large;
+			font-weight: 800;
+			padding: 20px;
+			color: rgb(249, 246, 246);
+			;
+		}
+		.header{
+			background-image: url("basketball.jpeg");
+			width:100%;
+			opacity:0.6;
+			height: 368px;
+			background-repeat: no-repeat;
+			background-size:cover;
+			background-position: center center;
+			}
+	    .tt{
+		text-align:center;
+		width:100%;
+		color:white;
+		margin:150px;
+		margin-left:0;
+		paddinig:10px;
+		padding-left:0px;
+		font-size:xx-large;
+		
+			
+}
+  `		.text-area{
+			  padding-top: 180px;
+			  }
+
+
+		.abc{
+			width:45%;
+			height:5%;
+			margin:0 auto;
+			item-align:center;
+			text-align:center;
+			padding: 20px;
+			font-size: x-large;
+			background-color:#F0F0F0;
+			border-bottom-color:#F0F0F0;
+		}
+		.container{
+			width: 1024px;
+			margin: 0 auto;
+			display:flex;
+		}
+		.main-footer .container1{
+			width: 1024px;
+			margin: 0 auto;
+			display:flex;
+			writing-mode:horizontal-tb;
+		}
+		.footer-item{
+			flex grow:1;
+			margin:0 40px;
+			writing-mode:horizontal-tb;
+			}
+		.footer-item nav{
+			display:flex;
+			flex-direction:column;
+		}
+		.footer-item nav a{
+			color:black;
+			line-height:1.4;
+			text-decoration:none;
+			padding:5px;
+			padding-left:0;
+		}
+		.footer-item h4{
+			font-size:24px;
+			border-bottom: 1px dotted ;
+			margin-bottom:.5em;
+			padding-bottom:.5em;
+			
+		}
+		.main-footer{
+			padding:50px 0 5px 0 ;
+			margin:0 auto;
+			background-color:#F0F0F0;
+			writing-mode:horizontal-tb;
+			width:100%;
+		}
+		.copyright{
+			width:100%;
+			text-align:center;
+			margin:50px 0 0px 0;
+
+			paddinig:10px;
+			padding-left:0px;
+			writing-mode:horizontal-tb;
+		}
+		.footer-item nav a:hover{
+			color:gray;
+			font-weight: 1000;
+		}
+		.footer-item nav p{
+			color:black;
+			line-height:1.4;
+			text-decoration:none;
+			padding:5px;
+			padding-left:0;
+		}
+</style>
+</head>
+
+<body>
+    <!-- 開始 -->
+	<div class="header">
+		<div class="container">
+				<div class="text-area">
+					<div class="tt">
+						
+						職員介紹
+					
+				</div>
+			</div>
+		</div>
+	</div>	
+	<br>
+	<br>	
+		<div class="card">
+			<div class="photo">
+				<img src="胡.jpg">
+			</div>
+			<h1>胡凱</h1>
+			<h2>創辦人兼執行長</h2>
+			<a href="https://isxo6.s3.amazonaws.com/%E7%B6%B2%E7%AB%99%E4%BC%81%E5%8A%83CEO.html"target=_blank>了解更多</a>
+		</div>
+		<div class="card">
+			<div class="photo">
+				<img src="黃.jpg">
+			</div>
+			<h1>黃少瑜</h1>
+			<h2>籃球經理人</h2>
+			<a href="https://isxo6.s3.amazonaws.com/%E7%B6%B2%E7%AB%99%E4%BC%81%E5%8A%83%E7%B1%83%E7%90%83%E7%B6%93%E7%90%86%E4%BA%BA.html" target=_blank>了解更多</a>
+		</div>
+		<div class="card">
+			<div class="photo">
+				<img src="施.jpg">
+			</div>
+			<h1>施尚丞</h1>
+			<h2>球探</h2>
+			<a href="https://isxo6.s3.amazonaws.com/%E7%B6%B2%E7%AB%99%E4%BC%81%E5%8A%83%E7%90%83%E6%8E%A2.html" target=_blank>了解更多</a>
+		</div>
+		<div class="card">
+			<div class="photo">
+				<img src="游.jpg">
+			</div>
+			<h1>游東霖</h1>
+			<h2>行銷長</h2>
+			<a href="https://isxo6.s3.amazonaws.com/%E7%B6%B2%E7%AB%99%E4%BC%81%E5%8A%83%E8%A1%8C%E9%8A%B7%E9%95%B7.html " target=_blank>了解更多</a>
+		</div>
+		<div class="card">
+			<div class="photo">
+				<img src="許.jpg">
+			</div>
+			<h1>許晟瑋</h1>
+			<h2>公關長</h2>
+			<a href="https://isxo6.s3.amazonaws.com/%E7%B6%B2%E7%AB%99%E4%BC%81%E5%8A%83%E5%85%AC%E9%97%9C%E9%95%B7.html" target=_blank>了解更多</a>
+		</div>
+		<div class="card">
+			<div class="photo">
+				<img src="藍.jpg">
+			</div>
+			<h1>藍偉倫</h1>
+			<h2>排球經理人</h2>
+			<a href="https://isxo6.s3.amazonaws.com/%E7%B6%B2%E7%AB%99%E4%BC%81%E5%8A%83%E6%8E%92%E7%90%83%E7%B6%93%E7%90%86%E4%BA%BA.html"target=_blank>了解更多</a>
+		</div>  
+	</div>	
+   <div class="main-footer" >
+	<div class="container1">
+		<div class="footer-item">
+			<h4>首頁</h4>
+			<nav>
+				<a href="https://isxo6.s3.amazonaws.com/homepage.html" target=_blank>首頁</a>
+			</nav>
+		</div>	
+		<div class="footer-item">
+			<h4>關於我們</h4>
+			<nav>
+				<a href="https://isxo6.s3.amazonaws.com/time.html"target=_blank>公司沿革</a>
+				<a href="https://isxo6.s3.amazonaws.com/introduction.html" target=_blank>職員介紹</a>
+			</nav>	
+		</div>	
+		<div class="footer-item">
+			<h4>明星陣容</h4>
+			<nav>
+				<a href="https://isxo6.s3.amazonaws.com/kai.html"target=_blank>簽約球員</a> 
+			</nav>	
+		</div>		
+		<div class="footer-item">
+			<h4>聯絡我們</h4>
+			<nav>
+				<p>地址:新北市三峽區大學路151號</p>
+				<p>電話 : (02) 22222222</p>
+				<p>信箱:richkaiagency@gmail.com</p>
+				<a href="https://isxo6.s3.amazonaws.com/form1.html"target=_blank style="text-decoration: none">回饋表單</a>
+			</nav>
+		</div>	
+		<div class="footer-item">	
+			<nav>
+				<a><img src="lo.png" alt="" style="width:130px;height:130px width=130 height=130"></a>
+			</nav>
+		</div>	
+	</div>	
+	<div class="copyright">Copyright &copy; 2022 Rich KAi Agency
+	</div>	
+
+</div>	
+</body>
+
+</html>
