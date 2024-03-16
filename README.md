@@ -25,13 +25,20 @@
    - 本社團未來展望與計畫。
 ## HTML/CSS 程式碼
 1. 個人網站
-   - 使用Boostrap，設計獨一無二的自定義響應式網站。
+   - 使用前端開發工具Bootstrap，設計獨一無二的自定義響應式網站。
    - 包含大學四年的專題說明和職涯經驗。
+   - 網站連結: https://isx901006.github.io/Isaac/
 2. Rich KAI Agency
    - 網站企劃(Website Planning)之課程專案，設計一虛擬的運動經紀公司網頁，架設於Amazon S3 Server。
    - 擔任組長，負責開發首頁與簽約球員頁面，協助其餘頁面設計。
+   - 網站連結: http://isxo6.s3-website-us-east-1.amazonaws.com/
 ## Python 程式碼
-1. 統計計算
-   - 
-3. 
+1. 畢業專題
+   - 使用selenium與BeautifulSoup套件，爬取台北大學課程與104人力銀行相關文本資訊。
+   - 使用Sentence-BERT遷移式深度學習模型，針對教育端與職場端的文本進行相似度比對。
+   - 使用Apriori針對各職務之需求職能進行關聯規則分析，挖掘潛在的技能組合。
+   - 使用 Python 串接 LINE Bot和 MySQL，使用用戶輸入特定職業時，可以透過 SQL 語法至資料庫中搜索需要的      數據，並回傳至聊天室窗，提供用戶該職業之推薦課程和應具備之職能。
+   - 使用Scikit_learn套件進行簡單的機器學習練習。
+3. 統計計算
+   - 運用Pandas、
 ## 專題成果
